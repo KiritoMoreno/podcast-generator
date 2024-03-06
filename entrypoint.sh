@@ -2,9 +2,9 @@
 
 echo "==================="
 
-git confi --global user.name "${GITHUB_ACTOR}"
-git confi --global user.email "${INPUT_EMAIL}"
-git confi --global --add safe.directory /github/workspace
+git config --global user.name "${GITHUB_ACTOR}"
+git config --global user.email "${INPUT_EMAIL}"
+git config --global --add safe.directory /github/workspace
 
 python3 /user/bin/feed.py
 
